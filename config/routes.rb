@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root to: "todos#index"
   resources :todos, only: [:index, :new, :create]
+  resources :sessions, only: [:new, :create]
 end
